@@ -1,222 +1,208 @@
-.App{
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width:100vw;
+.App {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
-.container{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .mobile-menu {
+  display: none;
+}
+.dropdown {
+  display: none;
+}
+
+.h-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1150px;
+  width: 2000px;
+  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  width: 100vw;
+}
+
+img {
+  height: 100px;
+  width: 175px;
+  padding-left: 5%;
+}
+.h-nav-bar {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100vw;
+}
+
+.h-nav-list {
+  display: flex;
+  color: white;
+  size: 20;
+  justify-content: space-between;
+  width: 550px;
+  padding-right: 175px;
+}
+
+span {
+  display: flex;
+}
+span:hover {
+  color: rgb(212, 175, 55);
+}
+.content {
+  padding-top: 3vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.h-Content {
+  font-size: 40px;
+}
+
+.h-text-1 {
+  font-size: 70px;
+  padding-bottom: 25px;
+}
+.h-btn-h1 {
+  background-color: rgb(212, 175, 55);
+  color: white;
+  height: 60px;
+  width: 180px;
+  border: none;
+  border-radius: 2%;
+}
+.h-btn-h1:hover {
+  background-color: rgb(218, 165, 32);
+}
+
+@media (max-width: 1100px) {
+  .h-nav-bar {
+    height: 50px;
+  }
+  .h-nav-list {
+  }
+  .content {
+  }
+  img {
+    padding-left: 1%;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .h-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .h-nav-list {
     display: none;
   }
   .dropdown {
-    display: none;
-  }
-
-
-.h-img-box{
-    height: 1150px;
-    width: 2000px;
-    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg) ;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-header{
-    color: white;
-}
-
-
-img{    
-    height:250px;
-    width:175px;
-    /* padding-top: 8%; */
-    padding-left:3%;
-    
-}
-.h-nav-bar{
+    display: initial;
+    font-size: 25px;
+    cursor: pointer;
+    position: initial;
+    bottom: 540px;
+    right: 50px;
+    height: 35px;
+    width: 90px;
     display: flex;
-    flex-direction: row;
-    padding-top: 8%;
-    align-items: center;
-    justify-content: space-evenly;
-    /* height: 20vh;
-    width: 100vw; */
-}
-
-.h-nav-list{
-    display: flex;
-    color:white;
-    size: 20;
-    justify-content: space-between;
-    width: 550px;
-    padding-right: 175px;
-    /* flex-direction: row; */      
-}
-
-span{
-    display: flex;
-}
-span:hover{
-    color:rgb(212,175,55);
-
-}
-.content{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(212, 175, 55);
+    margin-right: 10%;
+    border-radius: 3%;
+    font-size: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .mobile-menu {
+    display: initial;
+    background: #3b3b3b;
+    position: fixed;
+    top: 44px;
+    right: 0px;
+    height: 250px;
+    width: 39vw;
+    display: flex;
     flex-direction: column;
-    padding-top: 125px;
-}
-.h-Content{
-    font-size: 40px;
-}
+    justify-content: space-evenly;
+  }
+  .h-Content {
+    font-size: 20px;
+  }
+  header {
+    padding-bottom: 30vh;
+  }
 
-.h-text-1{
-    font-size: 70px;
-    padding-bottom: 25px;
-}
-.h-btn-h1{
-    background-color: rgb(212,175,55);
+  .h-text-1 {
+    font-size: 40px;
+  }
+  .h-btn-h1 {
+    background-color: rgb(212, 175, 55);
     color: white;
     height: 60px;
     width: 180px;
     border: none;
     border-radius: 2%;
+    font-size: 18;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -50px;
+  }
+  .h-img-box {
+    height: 100vw;
+    width: 100vw;
+  }
 
+  @media (max-width: 600px) {
+    .content {
+      padding-bottom: 0px;
+      padding-top: 200px;
+    }
+    .container {
+      height: 100vh;
+    }
+    .h-img-box {
+      height: 100vh;
+    }
+    .h-text-1 {
+      text-align: center;
+    }
+  }
 }
-.h-btn-h1:hover{
-    background-color: rgb(218,165,32);
-}
-
-@media (max-width: 1100px){
-    .h-nav-bar{
-        height:50px;
-        padding-top: 8%;
-        padding-left: 100px;
-    }
-    .h-nav-list{
-        size: 50vh;
-        padding-left: 200px;
-        padding-right: 50px;
-    }
-    .content{
-        padding-top: 200px;
-    }
-    img{
-        padding-left: 1%;
-    }
-    .mobile-menu {
-        display: none;
-      }
-    .container{
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: -50px;
-
-        ;
-    }
-    .h-img-box{
-        height:100vw;
-        width: 100vw;
-    }
-}
-
-@media (max-width: 900px){
-    .h-nav-bar{
-        height:50px;
-        padding-top: 8%;
-        padding-left: 100px;
-    }
-    .h-nav-list{
-        Display: none;
-    }
-    .dropdown{
-        display: initial;
-        font-size: 25px;
-        cursor: pointer;
-        position: fixed;
-        bottom: 540px;
-        right: 100px;
-        height: 35px;
-        width: 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: rgb(212,175,55);
-      
-    }
-    .mobile-menu {
-        display: initial;
-        background: #3B3B3B;
-        position: fixed;
-        top: 125px;
-        right: 0px;
-        height: 250px;
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-      }
-    .content{
-        padding-top: 200px;
-    }
-    img{
-        padding-right: 75% ;
-    }
-    .h-Content{
-        font-size: 20px;
-    }
-    
-    .h-text-1{
-        font-size: 40px;
-        padding-bottom: 25px;
-    }.h-btn-h1{
-        background-color: rgb(212,175,55);
-        color: white;
-        height: 60px;
-        width: 180px;
-        border: none;
-        border-radius: 2%;
-    
-    }
-    .container{
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: -50px;
-    
-        ;
-    }
-    .h-img-box{
-        height:100vw;
-        width: 100vw;
-    }
-}    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-

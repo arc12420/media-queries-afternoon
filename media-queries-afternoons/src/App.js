@@ -1,22 +1,19 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Icon, InlineIcon } from '@iconify/react';
-import barsIcon from '@iconify/icons-fa/bars';
-
 
 class App extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      dropDownVisible: false
-    }
+      dropDownVisible: false,
+    };
   }
 
   toggleDropDown = () => {
     this.setState({
-      dropDownVisible: !this.state.dropDownVisible
-    })
-  }
+      dropDownVisible: !this.state.dropDownVisible,
+    });
+  };
 
   render() {
     return (
@@ -25,17 +22,20 @@ class App extends Component {
           <div className="h-img-box">
             <header className="main-header">
               <div className="h-nav-bar">
-                <div className= "dropdown" onClick={this.toggleDropDown}>Menu <Icon icon={barsIcon} /> </div>
                 {this.state.dropDownVisible ? (
                   <nav className="mobile-menu">
                     <span>SERVICES</span>
                     <span>PORTFOLIO</span>
                     <span>ABOUT</span>
                     <span>TEAM</span>
-                    <span>CONTACT</span>                    
+                    <span>CONTACT</span>
                   </nav>
                 ) : null}
                 <img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg" />
+                <div className="dropdown" onClick={this.toggleDropDown}>
+                  {" "}
+                  Menu{" "}
+                </div>
                 <div className="h-nav-list">
                   <span>SERVICES</span>
                   <span>PORTFOLIO</span>
